@@ -1,0 +1,7 @@
+{
+  "name": "moneymarket-claude-mcp-setup-macos",
+  "private": true,
+  "dependencies": {
+    "mcp-remote": "0.8.2"
+  }
+}

@@ -1,0 +1,16 @@
+services:
+  claude-test:
+    image: claude-mcp-test
+    network_mode: none
+    read_only: true
+    tmpfs:
+      - /tmp:rw,nosuid,nodev
+    volumes:
+      - ./claude_deploy_for_testing_env:/work:ro
+    environment:
+      HOME: /tmp/test-home
+      USER: test
+    working_dir: /work
+    stdin_open: true
+    tty: true
+    command: bash
